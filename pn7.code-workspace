@@ -1,0 +1,27 @@
+{
+  "folders": [
+    {
+      "path": "frontend",
+    },
+    {
+      "name": "root",
+      "path": ".",
+    },
+  ],
+  "settings": {
+    "files.associations": {
+      "**/frontend/**/*.css": "tailwindcss",
+    },
+    "files.exclude": {
+      "**/.git": true,
+      "**/.svn": true,
+      "**/.hg": true,
+      "**/.DS_Store": true,
+      "**/Thumbs.db": true,
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/package-lock.json": true,
+    },
+    "git.ignoreLimitWarning": true,
+  },
+}

@@ -1,0 +1,4 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import '@pn7/shared/theme.css';
+@source "../../../packages/shared/src";

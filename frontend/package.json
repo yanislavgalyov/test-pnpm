@@ -1,0 +1,32 @@
+{
+  "name": "@pn7/monorepo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev:bg": "pnpm --filter @pn7/bg dev",
+    "dev:cro": "pnpm --filter @pn7/cro dev",
+    "dev": "pnpm -r --parallel --filter @pn7/bg --filter @pn7/cro dev",
+    "build:bg": "pnpm --filter @pn7/bg build",
+    "build:cro": "pnpm --filter @pn7/cro build",
+    "build:all": "pnpm -r --filter @pn7/bg --filter @pn7/cro build",
+    "lint": "pnpm -r lint",
+    "format": "prettier --write \"{apps,packages}/**/src/**/*.{ts,tsx,js,jsx,json,css}\"",
+    "format:check": "prettier --check \"{apps,packages}/**/src/**/*.{ts,tsx,js,jsx,json,css}\""
+  },
+  "devDependencies": {
+    "@eslint/js": "catalog:",
+    "eslint": "catalog:",
+    "eslint-plugin-react-hooks": "catalog:",
+    "eslint-plugin-react-refresh": "catalog:",
+    "globals": "catalog:",
+    "prettier": "^3.4.2",
+    "typescript-eslint": "catalog:"
+  },
+  "engines": {
+    "node": ">=25.0.0"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}
